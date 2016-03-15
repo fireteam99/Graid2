@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/backgroundColor"
     android:gravity="center_horizontal"
     >
 
@@ -15,6 +15,7 @@
         android:focusable="false"
         android:textColor="#ffffff"
         android:textSize="40sp"
+        android:fontFamily="sans-serif-thin"
         android:id="@+id/textView" />
 
     <ImageView
@@ -22,7 +23,6 @@
         android:layout_height="300dp"
         android:scaleType="fitXY"
         android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal"
         android:src="@drawable/icon"
         android:focusable="false"
         android:cropToPadding="true" />
@@ -33,10 +33,12 @@
         android:layout_margin="40dp"
         android:text="Continue"
         android:textSize="30sp"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorConfirm"
         android:id="@+id/button"
-        android:background="@drawable/buttons"
+        android:background="@drawable/minimal_buttons"
         android:onClick="openActivity2"
+        android:fontFamily="sans-serif-thin"
+        android:stateListAnimator="@null"
         />
 
 </LinearLayout>

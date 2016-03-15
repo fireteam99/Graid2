@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/backgroundAccountColor"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:text="Welcome to Your Account!"
         android:textColor="#ffffff"
         android:id="@+id/textView3"
         android:gravity="center"
+        android:fontFamily="sans-serif-thin"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="30sp"
+        android:layout_margin="40dp"
+        android:textSize="20sp"
         android:text="Everything you do here can be accessed on your computer"
         android:textColor="#ffffff"
         android:id="@+id/textView4"
         android:gravity="center"
+        android:fontFamily="sans-serif-light"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:text="Press Sync to Access from Web"
         android:textColor="#ffffff"
         android:id="@+id/textView5"
         android:gravity="center"
+        android:fontFamily="sans-serif-light"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="267dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="0dp"
         android:textSize="20sp"
         android:text="Sync"
         android:id="@+id/button4"
         android:background="@drawable/buttons"
+        android:textColor="@color/backgroundColor"
+        android:fontFamily="sans-serif-thin"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>
