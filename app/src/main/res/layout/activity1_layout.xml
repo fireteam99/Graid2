@@ -33,7 +33,6 @@
         android:layout_margin="40dp"
         android:text="Continue"
         android:textSize="30sp"
-        android:textColor="@color/colorConfirm"
         android:id="@+id/button"
         android:background="@drawable/minimal_buttons"
         android:onClick="openActivity2"
