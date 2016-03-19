@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/gradient3"
     android:layout_height="match_parent"
     android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:text="Login to Your Account"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="35sp"
         android:id="@+id/textView6"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="315dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editText"
         android:hint="Email Address"
         android:textColorHint="#ffffff"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.05" />
+        android:layout_weight="0.05"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="313dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:inputType="textPassword"
         android:ems="10"
         android:hint="Password"
         android:textColorHint="#ffffff"
         android:id="@+id/editText2"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.05" />
-</LinearLayout>
+        android:layout_weight="0.05"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+</RelativeLayout>

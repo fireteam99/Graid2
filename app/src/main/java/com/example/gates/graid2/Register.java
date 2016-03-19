@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.R;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -20,12 +21,12 @@ public class Register extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.register_layout);
+		setContentView(android.R.layout.simple_selectable_list_item);
 		spinner();
 		next();
 	}
 	public void next(){
-		final EditText editText5 = (EditText) findViewById(R.id.editText5);
+		final EditText editText5 = (EditText) findViewById(R.id.edit);
 		editText5.setOnKeyListener(new TextView.OnKeyListener() {
 			@Override
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -38,11 +39,17 @@ public class Register extends Activity {
 			}
 		});
 	}
+
 	public void spinner(){
+		Spinner s = (Spinner) findViewById(R.id.text1);
 		List<String> l = new ArrayList<String>();
-		Spinner s = (Spinner) findViewById(R.id.spinner);
-		ArrayAdapter<String> ad = new ArrayAdapter<String>(this,R.layout.spinner_item,l);
+		l.add("Teacher");
+		l.add("Learning Center");
+		l.add("Self Administration");
+		ArrayAdapter<String> ad = new ArrayAdapter<String>(this,R.layout.simple_spinner_dropdown_item,l);
+		ad.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
 	}
+
 	public void openActivity3(){
 		  Intent intent = new Intent(Register.this, Activity3.class);
 		  startActivity(intent);
